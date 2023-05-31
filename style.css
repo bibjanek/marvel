@@ -1,0 +1,304 @@
+/* -----------------------------------------------------------------------------------ANIM & FONTS-------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Roboto+Mono&display=swap');
+
+@keyframes title-anim {
+    from {
+        color: rgba(255, 255, 255, 0);
+        transform: translateY(200px);
+    }
+    to {color: rgb(255, 255, 255);}
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 53, 53);
+    width: 100%;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+/* -------------------------------------------------------------IMPORTANT----------------------------------------------------------------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    overflow: overlay;
+}
+
+p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    animation-name: title-anim;
+    animation-duration: 1s;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2 {
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+ul, ol, li {
+    color: white;
+    font-family: 'Jost', sans-serif;
+    padding-left: 0;
+    animation-name: title-anim;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+img {
+    margin: 3%;
+}
+
+/* --------------------------------------------------------------------------------------NAV---------------------------------------------------------------------------------------*/
+
+.nav-main {
+    background: linear-gradient(90deg, #b30000 0%, rgb(255, 53, 53) 100%);
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+}
+
+.a-nav {
+    font-size: 30px;
+    padding: 2%;
+    transition-duration: 0.2s;
+}
+
+.a-nav-index {
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    left: 0;
+}
+
+.a-nav:hover {
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    transition-duration: 0.2s;
+}
+/* -------------------------------------------------------------------------MAIN------------------------------------------------------------------------------------------------- */
+
+.title {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 130px;
+    text-align: center;
+    animation-name: title-anim;
+    animation-duration: 1s;
+}
+
+.subtitle {
+    margin-top: 0;
+    font-size: 47px;
+    text-align: center;
+    animation-name: title-anim;
+    animation-duration: 1s;
+    margin-bottom: 20vh;
+}
+
+.mcu-list {
+    font-size: 23px;
+    animation-name: title-anim;
+    animation-duration: 1s;;
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+
+.h2-main {
+    margin-top: 17%;
+    font-size: 40px;
+    animation-name: title-anim;
+    animation-duration: 1s;;
+}
+
+.h2-main::before {
+    content: "∎ ";
+    color: red;
+}
+
+.main {
+    width: 60%;
+    margin: auto;
+}
+
+.img-main {
+    width: 25%; 
+    height: 15%;
+}
+
+.mcu-img {
+    width: 40%
+}
+
+.fact {
+    padding : 3%;
+    background : #2d2f31; 
+    color : white;
+    font-size : 20px;
+    cursor : pointer;
+    display: block;
+}
+
+.fact::after {
+    float: right;
+    right: 10%;
+    content: "🡣";
+}
+
+.slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+    background: #4b4b4b;
+    font-size: 20px;
+}
+
+.slide li {padding : 3%;}
+
+#one {position: absolute; opacity: 0; height: 0px;}    
+
+#one:checked + .slide {height: 5%;} 
+
+#two {position: absolute; opacity: 0; height: 0px;}    
+
+#two:checked + .slide {height: 5%;} 
+
+#three {position: absolute; opacity: 0; height: 0px;}    
+
+#three:checked + .slide {height: 5%;} 
+
+#four {position: absolute; opacity: 0; height: 0px;}    
+
+#four:checked + .slide {height: 5%;} 
+
+
+
+/* ---------------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------- */
+
+.hr-footer {
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+footer {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 7%;
+}
+
+.a-footer {
+    color: lightgray;
+    margin: 1%;
+    transition-duration: 0.2s;
+    font-size: smaller;
+    text-align: left;
+}
+
+.dot-footer {
+    color: lightgray;
+    font-size: smaller;
+}
+
+.a-footer:hover {
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.author-footer {
+    color: lightgray;
+    font-size: smaller;
+    float: right;
+    margin-right: 1%;
+}
+
+.links-footer {
+    width: 50%;
+    float: left;
+}
+
+/* -------------------------------------------------------------------------------GALLERY------------------------------------------------------------------------------------------ */
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    gap: 1%;
+}
+
+.img-gallery { 
+    width: 60%;
+    height: 80%;
+    margin: 8%;
+    transition-duration: 0.3s;
+}
+
+.img-gallery:hover {
+    transition-duration: 0.3s;
+    transform: scale(115%);
+}
+
+.p-gallery {
+    font-size: 17px;
+    margin: auto;
+    color: rgb(211, 211, 211);
+}
+
+/* --------------------------------------------------------------------------SOURCES---------------------------------------------------------------------------------------------- */
+
+.sources-list {
+    font-size: 23px;
+    animation-name: title-anim;
+    animation-duration: 1s;
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+
+.sources {
+    transition-duration: 0.2s;
+}
+
+.sources:visited {
+    color: #bdbdbd;
+}
+
+.sources:hover {
+    color: #ff4a4a;
+    transition-duration: 0.2s;
+}
+
+.sources:active {
+    color: #920000;
+}
