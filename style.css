@@ -23,6 +23,10 @@
     background: #b30000; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(39, 39, 39);
     margin: auto;
@@ -44,11 +48,10 @@ body {
 }
 
 .a-nav-index {
-    font-size: 70px;
-    transition-duration: 0.2s;
-    font-family: 'Jost', sans-serif;
+    width: 5%;
+    height: 5%;
     position: absolute;
-    left: 1%;
+    left: 0;
 }
 
 .a-nav:hover {
@@ -84,6 +87,20 @@ a {
 h1, h2 {
     color: white;
     font-family: 'Jost', sans-serif;
+}
+
+ul, ol, li {
+    color: white;
+    font-family: 'Jost', sans-serif;
+    padding-left: 0;
+}
+
+.mcu-list {
+    font-size: 23px;
+    animation-name: title-anim;
+    animation-duration: 1s;;
+    margin-left: 5%;
+    margin-top: 1.5%;
 }
 
 .h2-main {
@@ -122,6 +139,10 @@ p {
 .img-main {
     width: 25%; 
     height: 15%;
+}
+
+.mcu-img {
+    width: 40%
 }
 
 img {
