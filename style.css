@@ -302,3 +302,109 @@ footer {
 .sources:active {
     color: #920000;
 }
+/* -----------------------------------------------------------------------RESPONSIVE-------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+    .main {
+        width: 90%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .img-main {
+        width: 45%;
+        height: 35%;
+    }
+
+    .title {
+        font-size: 115px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .a-nav-index {
+        width: 15%;
+        height: 15%;
+    }
+
+    .a-footer {
+        font-size: x-small;
+    }
+
+    .author-footer {
+        font-size: x-small;
+    }
+
+    .gallery {
+        width: 95%;
+        margin-left: 3%;
+    }
+
+    .phone-p {
+        margin-bottom: 7%;
+    }
+
+    .sources-list {
+        font-size: 13px;
+    }
+
+    .h2-main {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1919px) {
+    .main {
+        width: 75%;
+    }
+
+    p {
+        font-size: 23px;
+    }
+
+    .img-main {
+        width: 37%;
+        height: 28%;
+    }
+
+    .title {
+        font-size: 135px;
+    }
+
+    .subtitle {
+        font-size: 45px;
+    }
+
+    .a-nav-index {
+        width: 8.5%;
+        height: 8.5%;
+    }
+
+    .a-footer {
+        font-size: small;
+    }
+
+    .author-footer {
+        font-size: small;
+    }
+
+    .gallery {
+        width: 80%;
+        margin-left: 11%;
+    }
+
+    .phone-p {
+        margin-bottom: 3%;
+    }
+
+    .sources-list {
+        font-size: 18px;
+    }
+
+    .h2-main {
+        font-size: 40px;
+    }
+}
